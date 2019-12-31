@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, callback) => {
             const rain_probability      = body.currently.precipProbability;
             const daily_weather_summary = body.daily.data[0].summary;
             
-            const weather_report        = `Summary:   ${daily_weather_summary}\nCurrently: ${temperature}\u00B0 Fahrenheit\n\t   ${rain_probability+'%'} chance of rain`;
+            const weather_report        = `<p>Summary: ${daily_weather_summary}</p><p>Currently: ${temperature}\u00B0 Fahrenheit</p><p>${rain_probability+'%'} chance of rain</p>`;
 
             callback(undefined, weather_report)
         }
