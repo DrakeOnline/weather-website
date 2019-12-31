@@ -15,7 +15,7 @@ const forecast = (latitude, longitude, callback) => {
             
             const weather_report        = `<p>Summary: ${daily_weather_summary}</p><p>Currently: ${temperature}\u00B0 Fahrenheit</p><p>${rain_probability+'%'} chance of rain</p>`;
 
-            callback(undefined, weather_report)
+            callback(undefined, {temperature, rain_probability, daily_weather_summary})
         }
     })
 }

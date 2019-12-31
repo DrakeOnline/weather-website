@@ -3,13 +3,14 @@
     {{>navigation}}
     <h1>The Weather</h1>
     <p>Welcome to WeatherTech</p>
-    <form action="">
+    <form action="" class="border-bottom pb-3">
         <input type="text" placeholder="Location">
         <button>Search</button>
     </form>
     <br/>
-    <div id="location"></div>
-    <div id="forecast"></div>
+    <h5 id="location" class="pt-2"></h5>
+    <br/>
+    <div id="forecast" class="border-bottom py-1 pb-3"></div>
     <br/>
     {{>footer name='Drake'}}
     <script src='scripts/script.js'></script>
