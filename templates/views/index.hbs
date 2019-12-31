@@ -1,0 +1,17 @@
+{{>header title='Home'}}
+<body class="w-75 m-auto text-center">
+    {{>navigation}}
+    <h1>The Weather</h1>
+    <p>Welcome to WeatherTech</p>
+    <form action="">
+        <input type="text" placeholder="Location">
+        <button>Search</button>
+    </form>
+    <br/>
+    <p id="location"></p>
+    <p id="forecast"></p>
+    <br/>
+    {{>footer name='Drake'}}
+    <script src='scripts/script.js'></script>
+</body>
+</html>
